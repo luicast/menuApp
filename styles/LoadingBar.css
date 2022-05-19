@@ -1,0 +1,43 @@
+.loading-bar{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    margin: 0 auto;
+}
+.progress{
+    position: relative;
+    height: 10px;
+    width: 200%;
+    border: 5px solid #f4a261;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.progress .color{
+    position: absolute;
+    background-color: #61DAFA;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
